@@ -1,0 +1,282 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Analytics Freelancer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+</head>
+
+<body>
+  <section class="hero is-medium is-dark is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-128x128">
+                  <img class="is-rounded" src="img/face.png">
+                </figure>
+              </div>
+              <div class="media-center">
+                <h1 class="title">Hello. I'm Alex.</h1>
+                <h2 class="subtitle">Google Analytics Freelancer</h2>
+                <a class="button is-rounded is-danger is-medium box is-inline" href="mailto:a.shhukin@gmail.com">
+                  <span class="icon is-medium">
+                    <i class="far fa-envelope"></i>
+                  </span>
+                  <span>Email Me</span>
+                </a>
+              </div>
+            </div>
+
+            <div id="about" class="content">
+              <p>I help digital agencies, e-commerce and lead generation SMBs with the technical part of&nbsp;analytics: advanced Google Analytics setup, marketing ROI measurement and KPIs visualization on a Google Data Studio dashboard, to name a few.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div id="work_top" class="tile is-ancestor">
+        <div class="tile is-parent is-6">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">Enhanced Ecommerce With a Custom Coded CMS</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="img/enhanced_ecommerce_custom_coded.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                
+                <p>Wholesale e-commerce store's owner approached me with a quite simple project &mdash; implement Google Analytics Enhanced Ecommerce and a few additional events' tracking. But there were few things that made the project interesting:</p>
+                
+                <ul>                
+                  <li>Custom coded CMS. As a cherry on top, comments and variable names were localized. Having Google Translate at hand, I had to dig deeper into CMS internals, understand how parts move and ensure my pieces of custom PHP and JavaScript code here and there would fit into CMS not breaking anything along with Enhanced Ecommerce setup.</li>
+                
+                  <li>High volume of different products. Since it's a wholesale store that operates with many SKUs on category pages, I've bumped into POST limit for sending data to dataLayer quite soon. Once again, I had to write some custom workaround code to send the data iteratively in batches.</li>
+                </ul>
+
+                <p>As a result, with Enhanced Ecommerce up and running, client now has better understanding of the store's performance and his clients' shopping behavior.</p>
+
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <div class="tile is-parent is-6">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">MCF Assisted Conversions blended in GDS</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="img/gds_mcf.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+
+                <p>At the time I first met that digital marketing agency, they already had a Google Data Studio dashboard to evaluate lead generating efforts broken down by marketing channel for a client of theirs. A simple table with common GA data, no big deal. The problem was they tried a few times to no success to extend the table with a single additional metric and were asking if I could help.</p>
+
+                <p>What made the project challenging was that the requested metric was Assisted Conversions from GA Multi-Channel Funnel report. To make things a bit more fun, they had a custom channels grouping, but only inside GDS.</p>
+
+                <p>To deliver the solution while having in mind all project limitations was quite an exciting task. Here's what I did:</p>
+
+                <ul>
+                  <li>set up automatic pulls of Assisted Conversions into Google Sheets using a separate MCF API;</li>
+                  <li>imported that sheet as a data source into GDS while applying unified custom channel grouping to both itself and GA source;</li>
+                  <li>joined GA and MCF data by creating new blended data source;</li>
+                  <li>extended the table with MCF Assisted Conversions metric which was linked with other marketing channels data from GA;</li>
+                  <li>and finally, fixed table's summary row to overcome GDS issue when calculating totals from blended data sources.</li>
+                </ul>
+
+                <p>The project was a success: added metric has led to a better, more holistic understanding of marketing channels performance.</p>
+
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        
+      </div>
+
+      <div id="work_bottom" class="tile is-ancestor">
+
+        <div class="tile is-6 is-parent">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">GDS Dashboard for a Small E-Commerce Store</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="img/gds_dashboard_ecommerce.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+
+                <p>When the store's owner asked me of another favor we already had some history successfully straighten out initial sloppy analytics setup. Now, with the correct data flowing in, the owner wanted a convenient way to keep an eye on all KPIs of his property at once.</p>
+
+                <p>After discussing his business goals and appropriate metrics to track, I've designed a prototype dashboard in Google Data Studio and showed it to the client. Few iterations later we agreed on a layout and exact metrics that should be rendered and I've moved on to the next phase &mdash; connecting client's data sources to a dashboard.</p>
+
+                <p>As of implementation, there was a minor hiccup related to a 3rd party data connector, but other than that it went smooth. The most interesting part was to create 'Sales funnel' widget, having in mind GDS didn't have anything similar and I had to improvise. Nevertheless, the final result was even more informative and actionable than it was in the prototype.</p>
+
+                <p>In the end, client was quite happy having all his metrics accessible in one place, so he could just give a quick look at the dashboard to get an idea of how his business going.</p>
+
+              </div>
+            </div>
+          </div>          
+        </div>
+
+
+        <div class="tile is-6 is-parent">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title is-size-5">Simple Metric Calculation for GDS Dashboard</p>
+            </header>
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="img/simple_metric_calculation.png">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+
+                <p>How complex could be dividing two numbers and showing the difference? You might be thinking, even toddler should handle that. Well, when it comes to GDS, you may have to take a scenic route.</p>
+
+                <p>A client of mine, he manages CRO business, needed a simple way of keeping his clients informed on the progress of optimization efforts. Clearly, a new way should be better that emailing monthly reports, so I came up with a pretty basic dashboard, showing how A\B tests are going in real-time. One of the metrics we agreed on was % delta (difference) between A and B variants' performance. But due to some GDS limitations I had to create the following workaround.</p>
+
+                <ol>
+                  <li>First, I've set up scheduled pulls of data from Google Analytics into the Google Sheets, reference copied that data on a separate sheet and added delta calculations for a number of metrics.</li>
+
+                  <li>With calculations handled I was able to import the sheet as a new data source in GDS and prettify it with formatting. So far so good.</li>
+
+                  <li>Finally I could display delta on the dashboard. Hooray.</li>
+                </ol>
+
+                <p>Nut has been successfully cracked with a sledgehammer.</p>
+
+              </div>
+            </div>
+          </div>          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="container">
+
+      <h2 class="title is-capitalized">A few words from my clients:</h2>
+
+      <article class="message is-light">
+        <div class="message-body">
+          Alex solved a problem that many others couldn't. Wonderful fast delivery. Great experience.
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Brogan <span class="flag-icon flag-icon-au"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          Amazing attention to detail! Alex is a great communicator as well and we will be doing business in the future!
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Linda <span class="flag-icon flag-icon-us"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          Very pleased with quick actions and very good communication. I will order again!
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Johan <span class="flag-icon flag-icon-se"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          Great experience, working with this seller has been a piece of cake! Fast, perfect communication and excellent result. Gladly again!
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Christian <span class="flag-icon flag-icon-de"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          Great and fast work, great communication! Now we see where the customers really came from. It works perfectly now.
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Matheis <span class="flag-icon flag-icon-ch"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          Alex did an excellent job. Highly impressed with his communication, dedication, attention-to-detail and overall data analytics abilities. Thank you!!!
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Ori <span class="flag-icon flag-icon-us"></span>
+          </div>
+        </div>
+
+        <div class="message-body">
+          One of the best, most polite, punctual and accurate freelancers I've ever worked with. Alex did an amazing job and I'd definitely work with him again!
+          <div class="message-footer has-text-right is-italic">
+            &mdash; Domenico <span class="flag-icon flag-icon-gb"></span>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+
+  <section class="hero is-medium is-light is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-capitalized">Need help with Google Analytics? Hire me!</h2>
+        <p class="subtitle">Here's what I can do for you:</p>
+
+        <div class="content">
+
+          <ul>
+            <li>Set up Google Analytics Enhanced Ecommerce</li>
+            <li>Visualize data with a Google Data Studio dashboard</li>
+            <li>Audit Google Analytics setup; fix revealed issues (double tracking, inconsistent data, cross-domain tracking, etc.)</li>
+            <li>Track events (calls, form submissions) in Google Analytics</li>
+            <li>Migrate scattered and hardcoded tags into Google Tag Manager</li>
+            <li>Measure marketing channels ROI and marketing campaigns effect</li>
+          </ul>
+
+          <a class="button is-rounded is-danger is-medium box is-inline" href="mailto:a.shhukin@gmail.com">
+            <span class="icon is-medium">
+              <i class="far fa-envelope"></i>
+            </span>
+            <span>Email Me</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer has-background-light is-size-6">
+    <div class="content has-text-centered">
+      <p>Google Analytics Freelancer - <a href="mailto:a.shhukin@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

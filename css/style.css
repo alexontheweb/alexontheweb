@@ -1,0 +1,67 @@
+#about {
+	margin-top: 2rem;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+	#about {
+		margin-bottom: 5rem;
+	}  
+}
+
+#work_top {
+	margin-top: -10em;
+}
+
+#work_top .card-image, #work_bottom .card-image {
+	border-top: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc;
+}
+
+#work_bottom ul {
+	margin-bottom: 2rem;
+}
+
+.footer {
+	padding-bottom: 3rem;
+}
+
+/* Flag Icons */
+
+.flag-icon {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33333333em;
+  line-height: 1em;
+}
+
+.flag-icon:before {
+  content: "\00a0";
+}
+
+.flag-icon-au {
+  background-image: url(../img/flags/au.svg);
+}
+
+.flag-icon-ch {
+  background-image: url(../img/flags/ch.svg);
+}
+
+.flag-icon-de {
+  background-image: url(../img/flags/de.svg);
+}
+
+.flag-icon-gb {
+  background-image: url(../img/flags/gb.svg);
+}
+
+.flag-icon-se {
+  background-image: url(../img/flags/se.svg);
+}
+
+.flag-icon-us {
+  background-image: url(../img/flags/us.svg);
+}
